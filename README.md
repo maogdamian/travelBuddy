@@ -1,4 +1,4 @@
-#:ship:Travel Buddy:airplane:
+# :ship: Travel Buddy :airplane:
 
 ## Summary
 A full-stack MERN app created by Damian Bennett
