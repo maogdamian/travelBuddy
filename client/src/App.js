@@ -9,7 +9,6 @@ import Nav from './layout/Nav.js';
 import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
-import About from './planning/About.js';
 import Results from './planning/Results.js';
 //To allow passing history object as props from Router
 import createHistory from "history/createBrowserHistory"; 
