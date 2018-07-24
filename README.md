@@ -10,7 +10,7 @@ A full-stack MERN app created by Damian Bennett
 * Node.js
 * HTML, CSS, Javascript
 * Materialize
-* Live site on [Heroku](https://)
+* Live site on [Heroku](https://damianstravelbuddy.herokuapp.com/)
 
 
 ### Backend Routes
