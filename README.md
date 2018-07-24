@@ -1,9 +1,8 @@
 # :ship: Travel Buddy :airplane:
 
-## Summary
 A full-stack MERN app created by Damian Bennett
 
-### Technologies Used
+## Technologies Used
 * MongoDB
 * Express
 * React
@@ -13,7 +12,7 @@ A full-stack MERN app created by Damian Bennett
 * Live site on [Heroku](https://damianstravelbuddy.herokuapp.com/)
 
 
-### Backend Routes
+## Backend Routes
 METHOD | URL | Purpose
 --- | --- | ---
 POST | /auth/signup | Adds new user to user database
