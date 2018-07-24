@@ -21,5 +21,18 @@
     "react-router-dom": "^4.2.2",
     "serve-favicon": "~2.4.5",
     "yelp-fusion": "^2.0.3"
-  }
+  },
+  "description": "## Summary A full-stack MERN app created by Damian Bennett",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maogdamian/travelBuddy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maogdamian/travelBuddy/issues"
+  },
+  "homepage": "https://github.com/maogdamian/travelBuddy#readme"
 }
