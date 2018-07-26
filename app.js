@@ -8,7 +8,26 @@ var app = express();
 
 // Mongoose stuff
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/TripPlanner', {useMongoClient: true});
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/TripPlanner', {useMongoClient: true});
+
+if(process.env.NODE_ENV == 'production'){
+  // Gotten using `heroku config | grep MONGODB_URI` command in Command Line
+  mongoose.connect('mongodb://maogdamian:J{J%!j9}M-jW~~+E4CJ~@ds253831.mlab.com:53831/heroku_zthzjpv4');
+}
+else{
+  mongoose.connect('mongodb://localhost/TripPlanner');
+}
+var db = mongoose.connection;
+
+// Show any Mongoose errors
+db.on('error', function(err) {
+  console.log('Mongoose Error: ', err);
+});
+
+// Once logged in to the db through mongoose, log a success message
+db.once('open', function() {
+  console.log('Mongoose connection successful.');
+});
 
 // Set up middleware
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
